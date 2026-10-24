@@ -1,0 +1,6 @@
+{
+  "name": "StockPilot - Inventory & Replenishment Dashboard",
+  "description": "Small business inventory management dashboard with barcode sales scanning, automated low-stock reorder draft generation, owner approval workflows, and supplier dispatch.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

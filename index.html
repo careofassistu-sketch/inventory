@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StockPilot - Inventory &amp; Replenishment Dashboard</title>
+    <meta name="description" content="Small business inventory management dashboard with barcode sales scanning, automated low-stock reorder draft generation, owner approval workflows, and supplier dispatch." />
+    <meta property="og:title" content="StockPilot - Inventory &amp; Replenishment Dashboard" />
+    <meta property="og:description" content="Small business inventory management dashboard with barcode sales scanning, automated low-stock reorder draft generation, owner approval workflows, and supplier dispatch." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script>
+      // Per AI Studio runtime environment constraint: "HMR: Disabled. Ignore WebSocket errors."
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event.reason;
+        var msg = reason ? (reason.message || String(reason)) : '';
+        var stack = reason ? (reason.stack || '') : '';
+        if (
+          msg.includes('WebSocket') ||
+          msg.includes('vite:ws') ||
+          stack.includes('@vite/client') ||
+          stack.includes('WebSocket')
+        ) {
+          event.preventDefault();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        var msg = event.message || '';
+        var file = event.filename || '';
+        if (msg.includes('WebSocket') || file.includes('@vite/client')) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
